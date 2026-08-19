@@ -39,6 +39,12 @@ npm run release:check
 - Extend `scripts/egress-allowlist.json` when you add allowed HTTPS endpoints.
 - Pin `@hebbian/dna` to a semver tag in `package.json`.
 
+## Before you trust green CI
+
+Read [@hebbian/dna verification discipline](https://github.com/mhellid-rgb/hebbian-dna/blob/main/docs/verification-discipline.md): green CI is not proof — read what each gate actually asserts (Playwright list, job cwd, snapshot early-return, registry scope).
+
+Keep [hebbian-app-template-verify](https://github.com/mhellid-rgb/hebbian-app-template-verify) as a known-green clone until your second project ships.
+
 ## Versioning
 
 Follow [`@hebbian/dna` semver](https://github.com/mhellid-rgb/hebbian-dna#versioning-semver): DNA value change = minor; removed/renamed token = major.
